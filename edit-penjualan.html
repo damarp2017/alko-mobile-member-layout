@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Alko Mobile</title>
+</head>
+
+<body class="">
+    <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
+        <div class="container-fluid d-flex justify-content-between py-1 px-3">
+            <div>
+                <a class="navbar-brand text-danger fw-bold" href="#">
+                    <img src="img/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-1">
+                    Alko Mobile
+                </a>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-outline-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog fa-lg"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="akun.html">
+                            <div class="text-end">
+                                Akun
+                            </div>
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="text-end">
+                                Logout
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-shrink-0" style="margin-bottom: 5rem; margin-top: 4rem;">
+        <div class="p-3 p-md-4">
+            <div>
+                <div class="text-danger fs-5 mb-2">
+                    Edit Penjualan
+                </div>
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="p-3 border border-danger rounded">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="coffee_id" class="form-label text-muted">Jenis Kopi</label>
+                                    <select class="form-select" name="coffee_id" aria-label="Default select example" required>
+                                        <option value="" selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="price" class="form-label text-muted">Harga (Per Kg)</label>
+                                    <input type="text" name="price" readonly class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight" class="form-label text-muted">Berat</label>
+                                    <input type="number" name="weight" class="form-control" required>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-danger">Simpan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-2 bg-light d-flex justify-content-evenly"
+        style="position: fixed; bottom: 0; width: 100%; box-shadow: 0 -0.5px 5px 0 #a5a5a552;">
+        <a href="index.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-home fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Home
+                </div>
+            </div>
+        </a>
+        <a href="katalog.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-tags fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Katalog
+                </div>
+            </div>
+        </a>
+        <a href="tambah.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-cart-plus fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Tambah
+                </div>
+            </div>
+        </a>
+        <a href="penjualan.html" class="text-decoration-none">
+            <div class="text-danger">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-history fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Penjualan
+                </div>
+            </div>
+        </a>
+        <a href="saldo.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-wallet fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Saldo
+                </div>
+            </div>
+        </a>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

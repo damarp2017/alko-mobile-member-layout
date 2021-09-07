@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Alko Mobile</title>
+</head>
+
+<body class="">
+    <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
+        <div class="container-fluid d-flex justify-content-between py-1 px-3">
+            <div>
+                <a class="navbar-brand text-danger fw-bold" href="#">
+                    <img src="img/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-1">
+                    Alko Mobile
+                </a>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-outline-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog fa-lg"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="akun.html">
+                            <div class="text-end">
+                                Akun
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="text-end">
+                                Logout
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-shrink-0" style="margin-bottom: 5rem; margin-top: 4rem;">
+        <div class="p-3 p-md-4">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="border p-3 rounded bg-danger shadow">
+                        <div class="d-flex">
+                            <div class="text-white my-auto me-3">
+                                <i class="fas fa-wallet fa-3x"></i>
+                            </div>
+                            <div>
+                                <div class="text-white fs-6">
+                                    Saldo Anda
+                                </div>
+                                <div class="text-white fw-bold fs-5">
+                                    Rp 80.000.000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <div class="border p-3 rounded bg-success shadow">
+                        <div class="text-white fs-6">
+                            Saldo Masuk
+                        </div>
+                        <div class="text-white fw-bold fs-6">
+                            Rp 90.000.000
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <div class="border p-3 rounded bg-secondary shadow">
+                        <div class="text-white fs-6">
+                            Saldo Keluar
+                        </div>
+                        <div class="text-white fw-bold fs-6">
+                            Rp 10.000.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top mb-3"></div>
+            <div>
+                <div>
+                    <div class="text-danger fs-5 mb-2">
+                        Riwayat Transaksi
+                    </div>
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <div class="">
+                                <form action="">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-danger" type="submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <nav class="mb-3">
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <button class="nav-link text-danger active" id="nav-all-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all"
+                                    aria-selected="true">Semua</button>
+                                <button class="nav-link text-danger" id="nav-in-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-in" type="button" role="tab" aria-controls="nav-in"
+                                    aria-selected="true">Masuk</button>
+                                <button class="nav-link text-danger" id="nav-out-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-out" type="button" role="tab" aria-controls="nav-out"
+                                    aria-selected="false">Keluar</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-all" role="tabpanel">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-3">
+                                        <div class="p-3 border border-success text-success rounded">
+                                            <div class="mb-2">
+                                                Penjualan diterima. ID #221
+                                            </div>
+                                            <div class="mb-2">
+                                                <div class="fw-bold fs-1">
+                                                    Rp 90.000.000
+                                                </div>
+                                            </div>
+                                            <div>
+                                                12 Januari 2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="p-3 border border-secondary text-secondary rounded">
+                                            <div class="mb-2">
+                                                Pencairan saldo
+                                            </div>
+                                            <div class="mb-2">
+                                                <div class="fw-bold fs-1">
+                                                    Rp -10.000.000
+                                                </div>
+                                            </div>
+                                            <div>
+                                                12 Januari 2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-in" role="tabpanel">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-3">
+                                        <div class="p-3 border border-success text-success rounded">
+                                            <div class="mb-2">
+                                                Penjualan diterima. ID #221
+                                            </div>
+                                            <div class="mb-2">
+                                                <div class="fw-bold fs-1">
+                                                    Rp 90.000.000
+                                                </div>
+                                            </div>
+                                            <div>
+                                                12 Januari 2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-out" role="tabpanel">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-3">
+                                        <div class="p-3 border border-secondary text-secondary rounded">
+                                            <div class="mb-2">
+                                                Pencairan saldo
+                                            </div>
+                                            <div class="mb-2">
+                                                <div class="fw-bold fs-1">
+                                                    Rp -10.000.000
+                                                </div>
+                                            </div>
+                                            <div>
+                                                12 Januari 2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-2 bg-light d-flex justify-content-evenly"
+        style="position: fixed; bottom: 0; width: 100%; box-shadow: 0 -0.5px 5px 0 #a5a5a552;">
+        <a href="index.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-home fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Home
+                </div>
+            </div>
+        </a>
+        <a href="katalog.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-tags fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Katalog
+                </div>
+            </div>
+        </a>
+        <a href="tambah.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-cart-plus fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Tambah
+                </div>
+            </div>
+        </a>
+        <a href="penjualan.html" class="text-decoration-none">
+            <div class="text-muted">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-history fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Penjualan
+                </div>
+            </div>
+        </a>
+        <a href="saldo.html" class="text-decoration-none">
+            <div class="text-danger">
+                <div class="d-flex justify-content-center mb-1 mt-2">
+                    <i class="fas fa-wallet fa-lg"></i>
+                </div>
+                <div class="text-center">
+                    Saldo
+                </div>
+            </div>
+        </a>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
