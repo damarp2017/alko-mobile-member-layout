@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <title>Alko Mobile</title>
 </head>
@@ -36,7 +37,9 @@
                             </div>
                         </a>
                     </li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
                     <li>
                         <a class="dropdown-item" href="#">
                             <div class="text-end">
@@ -91,55 +94,73 @@
             </div>
             <div class="border-top mb-3"></div>
             <div>
-                <div class="text-danger fs-5 mb-2">
-                    Berita
+                <div class="d-flex justify-content-between">
+                    <div class="text-danger fs-5 mb-2">
+                        Berita
+                    </div>
+                    <div>
+                        <button id="news-prev" class="btn btn-sm btn-outline-danger px-3 rounded-3"><i
+                                class="fas fa-long-arrow-alt-left fa-lg"></i></button>
+                        <button id="news-next" class="btn btn-sm btn-outline-danger px-3 rounded-3"><i
+                                class="fas fa-long-arrow-alt-right fa-lg"></i></button>
+                    </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-2 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/1628585822.png" class="img-fluid w-100 rounded-top" style="width: 100%;
-                            height: 30vh;
-                            object-fit: cover;" alt="">
-                            <div class="card-body">
-                                <div class="fw-bold fs-5">
-                                    Lorem ipsum dolor sit amet
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card shadow-sm">
+                                <img src="img/1628585822.png" class="img-fluid w-100 rounded-top" style="width: 100%;
+                                height: 30vh;
+                                object-fit: cover;" alt="">
+                                <div class="card-body">
+                                    <div class="fw-bold fs-5">
+                                        Lorem ipsum dolor sit amet
+                                    </div>
+                                    <div class="card-text mb-2" style="text-align: justify;">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, dolore libero
+                                        placeat repudiandae accusantium provident repellat ipsam sapiente fugit possimus
+                                        nam
+                                        molestiae debitis consectetur laudantium excepturi cumque quaerat veritatis
+                                        autem!
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-muted">
+                                            Diposting: 12 Desember 2021
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-text mb-2" style="text-align: justify;">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, dolore libero
-                                    placeat repudiandae accusantium provident repellat ipsam sapiente fugit possimus nam
-                                    molestiae debitis consectetur laudantium excepturi cumque quaerat veritatis autem!
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="text-muted">
-                                        Diposting: 12 Desember 2021
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card shadow-sm">
+                                <img src="img/kebun.jpg" class="img-fluid w-100 rounded-top" style="width: 100%;
+                                height: 30vh;
+                                object-fit: cover;" alt="">
+                                <div class="card-body">
+                                    <div class="fw-bold fs-5">
+                                        Lorem ipsum dolor sit amet
+                                    </div>
+                                    <div class="card-text mb-2" style="text-align: justify;">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, dolore libero
+                                        placeat repudiandae accusantium provident repellat ipsam sapiente fugit possimus
+                                        nam
+                                        molestiae debitis consectetur laudantium excepturi cumque quaerat veritatis
+                                        autem!
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-muted">
+                                            Diposting: 12 Desember 2021
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/logo.png" class="img-fluid w-100 rounded-top" style="width: 100%;
-                            height: 30vh;
-                            object-fit: cover;" alt="">
-                            <div class="card-body">
-                                <div class="fw-bold fs-5">
-                                    Lorem ipsum dolor sit amet
-                                </div>
-                                <div class="card-text mb-2" style="text-align: justify;">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, dolore libero
-                                    placeat repudiandae accusantium provident repellat ipsam sapiente fugit possimus nam
-                                    molestiae debitis consectetur laudantium excepturi cumque quaerat veritatis autem!
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="text-muted">
-                                        Diposting: 12 Desember 2021
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
     </main>
@@ -198,6 +219,36 @@
         </a>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '#news-next',
+                prevEl: '#news-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            spaceBetween: 100,
+            effect: 'creative',
+            creativeEffect: {
+                prev: {
+                    // will set `translateZ(-400px)` on previous slides
+                    translate: [0, 0, -400],
+                },
+                next: {
+                    // will set `translateX(100%)` on next slides
+                    translate: ['100%', 0, 0],
+                },
+            },
+
+        });
+    </script>
 </body>
 
 </html>
